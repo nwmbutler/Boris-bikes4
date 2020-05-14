@@ -6,13 +6,23 @@ def initialize
 end
 
   def release_bike
-    fail 'No Bike Docked' if @bikes.empty?
+    fail 'No Bike Docked' if empty?
     @bikes
   end
 
   def dock(bike)
-    fail 'Dock full' if @bikes.length > 19
+    fail 'Dock full' if full?
     @bikes << bike
+  end
+
+private
+
+  def empty?
+    @bikes.empty?
+  end
+
+  def full?
+    @bikes.count >= 20
   end
 end
 
