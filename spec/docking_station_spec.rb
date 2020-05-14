@@ -11,4 +11,8 @@ it 'expects Bike to be working' do
   expect(Bike.new.working).to eq(true)
 end
 
+it 'allows a bike to be docked' do
+  expect(DockingStation.new.dock("abike")).to eq("abike")
+end
+
 end
