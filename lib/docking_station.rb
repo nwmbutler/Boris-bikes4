@@ -1,7 +1,11 @@
 class DockingStation
   attr_reader :abike
   def release_bike
-    Bike.new
+    if @abike.nil?
+      fail 'No Bike Docked'
+    else
+      @abike
+    end 
   end
 
   def dock(bike)
