@@ -19,4 +19,16 @@ method release_bike.
 
 Challenge 8 - Back to Unit - Created and tested release_bike method
 
-Challenge 9 -
+Challenge 9 - Building a Bike
+
+Challenge 10 - Making docking stations get Bikes
+
+challenge 11 - Using instance variables
+
+Challenge 12 - Raising exceptions
+
+Challenge 13 - Limiting Capacity
+
+Challenge 14 - Using Complex attributes
+
+Challenge 15 - The Single Responsibility Principle
