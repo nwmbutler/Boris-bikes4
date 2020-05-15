@@ -25,4 +25,11 @@ it 'raises an error when docking station is full' do
   expect{docking.dock("bike")}.to raise_error('Dock full')
 end
 
+it 'capacity = DEFAULT CAPACITY if no argument is given' do
+  expect(DockingStation.new.instance_variable_get(:@capacity)).to eq(20)
 end
+
+it 'capacity is set by user' do
+  expect(DockingStation.new(30).instance_variable_get(:@capacity)).to eq(30)
+end
+end 
